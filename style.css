@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+#navBarWrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: min(100px,max(50px,15vw));
+  background: #8888ff88
+}
+#navBar {
+  position: sticky;
+}
+#title {
+  float: left;
+  margin: 10px;
+  font-size: min(60px,max(30px,10vw));
+}
+#tabButtonGroup {
+  float: right;
+}
+.tabButton {
+  display: inline-block;
+  width: min(150px,20vw);
+  line-height: min(100px,max(50px,15vw));
+  background: none;
+  transition: box-shadow 0.5s;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.tabButton:hover, .activeTabButton {
+  box-shadow: inset 0 -7px black;
+}
+.tabButton:active {
+  transition: box-shadow 0s;
+  box-shadow: inset 0 -7px white;
+}
+.pageSect {
+  width: 100vw;
+  height: 50vw;
+}
+#startImage {
+  background-image: none;
+  background: pink;
+}
+#services {
+  background: lightyellow;
+}
+#serviceTitle {
+  text-align: center;
+  font-size: min(50px,10vw)
+}
+#serviceWrapper {
+  display: flex;
+}
+.service {
+  flex-grow: 1;
+  text-align: center;
+  font-size: min(25px,5vw)
+}
